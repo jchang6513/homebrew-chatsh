@@ -8,4 +8,10 @@ cask "chatsh" do
   homepage "https://chatsh-terminal.vercel.app"
 
   app "chat.sh.app"
+
+  postflight do
+    system_command "/usr/bin/xattr",
+      args: ["-cr", "#{appdir}/chat.sh.app"],
+      sudo: false
+  end
 end
