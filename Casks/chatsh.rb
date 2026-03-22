@@ -1,10 +1,10 @@
 cask "chatsh" do
-  version "0.1.5"
-  sha256 "0251211ab1618194c454f9880f7cb3f78c60846974ba7b1e113bf22755253b5d"
+  version "0.1.6"
+  sha256 "ef008aae88dc0ff462ece4bfbb043e59c9ce26c932ab189517791efa59bc19b6"
 
-  url "https://github.com/jchang6513/chatsh/releases/download/v0.1.5/chatsh-v0.1.5.dmg"
+  url "https://github.com/jchang6513/chatsh/releases/download/v#{version}/chat.sh_#{version}_aarch64.dmg"
   name "chat.sh"
-  desc "Terminal-native AI REPL manager"
+  desc "Terminal-native AI Pane manager"
   homepage "https://chatsh-terminal.vercel.app"
 
   app "chat.sh.app"
