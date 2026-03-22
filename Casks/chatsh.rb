@@ -1,6 +1,6 @@
 cask "chatsh" do
-  version "0.1.11"
-  sha256 "d8c15f55651e6f67b27db5e2b98c8e6cc1dd4ea3139fdfe9aecc46c614e16b43"
+  version "0.1.12"
+  sha256 "e6c5b831ea93afb85fe18a9c33c40b846fe33b5beb76a889084db28eb116deec"
 
   url "https://github.com/jchang6513/chatsh/releases/download/v#{version}/chat.sh_#{version}_aarch64.dmg"
   name "chat.sh"
