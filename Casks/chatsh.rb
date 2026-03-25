@@ -1,8 +1,8 @@
 cask "chatsh" do
-  version "0.1.14"
-  sha256 "a2d6907c0ae1569c7beb37599a1fe789452f5e760eaf7defb1b01ba0a9e84e52"
+  version "0.1.16"
+  sha256 "d29a027ec75d14a349279efb6269b1622552924b1482e91f5f6bd48e72b2a2bd"
 
-  url "https://github.com/jchang6513/chatsh/releases/download/v#{version}/chat.sh_#{version}_aarch64.dmg"
+  url "https://github.com/jchang6513/chatsh/releases/download/v\#{version}/chat.sh_\#{version}_aarch64.dmg"
   name "chat.sh"
   desc "Terminal-native AI Pane manager"
   homepage "https://chatsh-terminal.vercel.app"
@@ -11,7 +11,7 @@ cask "chatsh" do
 
   postflight do
     system_command "/usr/bin/xattr",
-      args: ["-cr", "#{appdir}/chat.sh.app"],
+      args: ["-cr", "\#{appdir}/chat.sh.app"],
       sudo: false
   end
 end
